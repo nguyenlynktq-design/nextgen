@@ -1,0 +1,6 @@
+{
+  "name": "Nextgen English - Uông Bí",
+  "description": "Trung tâm Ngoại ngữ Nextgen English tại Uông Bí - Học tiếng Anh, dẫn lối tương lai. Cam kết môi trường học chất lượng cao giúp học viên tự tin giao tiếp và bứt phá tương lai.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
