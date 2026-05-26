@@ -6,7 +6,7 @@
 import { useState, useEffect, useRef } from "react";
 import { motion, useInView } from "motion/react";
 import logoImg from "./assets/images/logo.jpg";
-import lobbyImg from "./assets/images/lobby.jpg";
+import lobbyImg from "./assets/images/lobby.png";
 import heroImg from "./assets/images/hero_cover.jpg";
 import trangImg from "./assets/images/founder_trang.png";
 import thaoImg from "./assets/images/founder_thao.png";
@@ -382,6 +382,145 @@ export default function App() {
               </h2>
               <div className="h-1.5 w-24 bg-secondary-container rounded-full mt-2"></div>
             </motion.div>
+
+            {/* Admission Info */}
+            <div className="flex flex-col gap-4 text-center items-center mt-4">
+              <span className="text-secondary font-bold text-sm tracking-widest uppercase bg-secondary/10 px-4 py-1.5 rounded-full w-fit">
+                Năm học 2026 - 2027
+              </span>
+              <h3 className="font-lexend text-2xl md:text-4xl text-[#073a36] font-bold leading-tight">
+                Thông Báo Tuyển Sinh Năm Học Mới
+              </h3>
+              <div className="h-1 w-20 bg-primary rounded-full mb-2"></div>
+              <p className="text-on-surface-variant max-w-2xl text-sm leading-relaxed">
+                Trung tâm Ngoại ngữ Nextgen xin gửi lời chào trân trọng đến Quý phụ huynh cùng các em học sinh. Chúng tôi chính thức tuyển sinh các chương trình Anh ngữ chất lượng cao cho năm học mới:
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+              {/* Program 1 */}
+              <motion.div 
+                {...fadeInUp}
+                className="bg-white p-6 rounded-3xl border border-outline-variant/30 shadow-sm hover:border-primary/40 hover:-translate-y-1 transition-all flex flex-col gap-4"
+              >
+                <div className="bg-primary/10 text-primary w-12 h-12 rounded-2xl flex items-center justify-center font-bold text-lg shrink-0">
+                  🐣
+                </div>
+                <div>
+                  <h3 className="font-lexend font-black text-lg text-[#073a36]">Mầm non (4 - 5 tuổi)</h3>
+                  <p className="text-xs text-primary font-bold uppercase mt-1">Học mà chơi - chơi mà học</p>
+                </div>
+                <p className="text-xs text-on-surface-variant font-medium leading-relaxed">
+                  Làm quen tiếng Anh qua hình ảnh sinh động, âm thanh rộn ràng và vận động trực quan. Hình thành phản xạ tự nhiên nhất cho trẻ ngay từ thuở sơ khai.
+                </p>
+              </motion.div>
+
+              {/* Program 2 */}
+              <motion.div 
+                {...fadeInUp}
+                className="bg-white p-6 rounded-3xl border border-outline-variant/30 shadow-sm hover:border-primary/40 hover:-translate-y-1 transition-all flex flex-col gap-4"
+              >
+                <div className="bg-primary/10 text-primary w-12 h-12 rounded-2xl flex items-center justify-center font-bold text-lg shrink-0">
+                  🎒
+                </div>
+                <div>
+                  <h3 className="font-lexend font-black text-lg text-[#073a36]">Tiểu học (Lớp 1 - 5)</h3>
+                  <p className="text-xs text-primary font-bold uppercase mt-1">Xây nền tảng vững chắc</p>
+                </div>
+                <p className="text-xs text-on-surface-variant font-medium leading-relaxed">
+                  Phát triển đồng đều 4 kỹ năng: Nghe - Nói - Đọc - Viết. Giúp các em xây dựng rễ từ vựng và ngữ pháp vững vàng, tự tin giao tiếp và bứt phá điểm số ở trường.
+                </p>
+              </motion.div>
+
+              {/* Program 3 */}
+              <motion.div 
+                {...fadeInUp}
+                className="bg-white p-6 rounded-3xl border border-outline-variant/30 shadow-sm hover:border-primary/40 hover:-translate-y-1 transition-all flex flex-col gap-4"
+              >
+                <div className="bg-primary/10 text-primary w-12 h-12 rounded-2xl flex items-center justify-center font-bold text-lg shrink-0">
+                  📚
+                </div>
+                <div>
+                  <h3 className="font-lexend font-black text-lg text-[#073a36]">THCS (Lớp 6 - 9)</h3>
+                  <p className="text-xs text-primary font-bold uppercase mt-1">Lộ trình rõ ràng</p>
+                </div>
+                <p className="text-xs text-on-surface-variant font-medium leading-relaxed">
+                  Củng cố, nâng cao kiến thức bám sát khung SGK mới và chuẩn Cambridge. Lộ trình ôn thi học thuật rõ ràng để con tự tin học tập và vượt trội mục tiêu điểm số.
+                </p>
+              </motion.div>
+
+              {/* Program 4 */}
+              <motion.div 
+                {...fadeInUp}
+                className="bg-white p-6 rounded-3xl border border-outline-variant/30 shadow-sm hover:border-primary/40 hover:-translate-y-1 transition-all flex flex-col gap-4"
+              >
+                <div className="bg-primary/10 text-primary w-12 h-12 rounded-2xl flex items-center justify-center font-bold text-lg shrink-0">
+                  🎓
+                </div>
+                <div>
+                  <h3 className="font-lexend font-black text-lg text-[#073a36]">Luyện thi IELTS / 4 Kỹ Năng</h3>
+                  <p className="text-xs text-primary font-bold uppercase mt-1">Lộ trình học bài bản</p>
+                </div>
+                <p className="text-xs text-on-surface-variant font-medium leading-relaxed">
+                  Chương trình chuẩn hóa học thuật cao, phát triển toàn diện tư duy ngôn ngữ. Lộ trình giảng dạy khoa học giúp học viên tự tin nâng cao trình độ, đạt mục tiêu chứng chỉ.
+                </p>
+              </motion.div>
+            </div>
+
+            {/* Why Nextgen Grid */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-white p-8 md:p-12 rounded-[3rem] border border-primary/10 shadow-sm">
+              <div className="lg:col-span-7 flex flex-col gap-6">
+                <h3 className="font-lexend text-2xl font-black text-[#073a36]">Vì sao ba mẹ lựa chọn NEXTGEN?</h3>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  {[
+                    "Lộ trình học rõ ràng, phù hợp từng độ tuổi",
+                    "Giáo viên theo sát, quan tâm học sinh",
+                    "Học chắc - hiểu sâu - tiến bộ bền vững",
+                    "Kiểm tra đầu vào MIỄN PHÍ 100%"
+                  ].map((benefit, i) => (
+                    <div key={i} className="flex items-center gap-3 bg-surface p-4 rounded-2xl border border-outline-variant/20 shadow-sm">
+                      <span className="w-6 h-6 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-black text-xs">✓</span>
+                      <span className="text-xs font-bold text-[#073a36]">{benefit}</span>
+                    </div>
+                  ))}
+                </div>
+                <p className="text-xs font-semibold text-on-surface-variant italic leading-relaxed">
+                  * NextGen cam kết kiểm tra đầu vào 100% miễn phí nhằm đánh giá chính xác nhất năng lực ban đầu của con để xếp lớp và xây dựng lộ trình rèn luyện phù hợp nhất.
+                </p>
+              </div>
+
+              <div className="lg:col-span-5 bg-surface p-6 rounded-[2.5rem] border-2 border-secondary/20 shadow-sm flex flex-col gap-4 text-center items-center">
+                <span className="bg-red-500 text-white font-extrabold uppercase text-[10px] tracking-wider px-4 py-1.5 rounded-full animate-bounce">
+                  Thông tin tuyển sinh
+                </span>
+                <div className="flex flex-col">
+                  <span className="text-xs font-extrabold text-on-surface-variant uppercase">Hạn cuối đăng ký</span>
+                  <span className="font-lexend text-2xl font-black text-secondary mt-1">31 / 05 / 2026</span>
+                </div>
+                <div className="w-full h-px bg-outline-variant/30"></div>
+                <div className="flex flex-col gap-2 w-full">
+                  <div className="text-left w-full text-xs font-bold text-on-surface-variant flex flex-col gap-1">
+                    <span className="text-[10px] uppercase text-primary tracking-wider">Hotline tư vấn liên hệ:</span>
+                    <span className="text-sm font-black text-[#073a36]">0986 197 229 / 0334 141 989</span>
+                  </div>
+                  <div className="text-left w-full text-xs font-bold text-on-surface-variant flex flex-col gap-1 mt-1">
+                    <span className="text-[10px] uppercase text-primary tracking-wider">Địa chỉ trung tâm:</span>
+                    <span className="text-xs font-black text-[#073a36]">Số 32 Tổ 31B K9, Quang Trung, Phường Uông Bí, Quảng Ninh</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Section Divider */}
+            <div className="h-px bg-outline-variant/30 my-6"></div>
+
+            {/* Sub-heading for details */}
+            <div className="flex flex-col gap-2 text-center items-center">
+              <h3 className="font-lexend text-xl md:text-2xl font-black text-on-surface">CHI TIẾT CHƯƠNG TRÌNH HỌC & HỌC PHÍ</h3>
+              <p className="text-xs font-bold text-on-surface-variant uppercase tracking-widest bg-secondary-container/20 px-4 py-1 rounded-full w-fit">
+                Vui lòng chọn hình thức bên dưới để xem biểu phí
+              </p>
+            </div>
 
             {/* Tab Navigations */}
             <motion.div 
@@ -1490,219 +1629,7 @@ export default function App() {
           </div>
         </section>
 
-        {/* Activities Gallery Section */}
-        <section id="news" className="py-24 px-6 bg-surface-variant/20 overflow-hidden scroll-mt-20">
-          <div className="max-w-7xl mx-auto flex flex-col gap-16">
-            <motion.div {...fadeInUp} className="flex flex-col gap-4 text-center items-center">
-              <span className="text-primary font-bold text-sm tracking-widest uppercase mb-2">Moments of Joy</span>
-              <h2 className="font-lexend text-3xl md:text-5xl text-on-surface font-bold">
-                Khoảnh khắc tại <span className="text-primary">Trung tâm</span>
-              </h2>
-              <div className="h-1.5 w-24 bg-secondary-container rounded-full mb-4"></div>
-              <p className="text-on-surface-variant max-w-2xl text-lg leading-relaxed text-center">
-                Tại Nextgen English, học tập không chỉ giới hạn trong sách vở. Chúng tôi kiến tạo một cộng đồng năng động, nơi tiếng Anh mang lại niềm vui, sự sẻ chia và những trải nghiệm thực tế đáng nhớ.
-              </p>
-            </motion.div>
-
-            {/* Masonry-style Grid */}
-            <motion.div 
-              variants={stagger}
-              initial="initial"
-              whileInView="whileInView"
-              viewport={{ once: true }}
-              className="grid grid-cols-2 md:grid-cols-4 gap-4 auto-rows-[200px] md:auto-rows-[300px]"
-            >
-              {/* Video 1 - Large Feature */}
-              <motion.div 
-                variants={fadeInUp}
-                className="md:row-span-2 md:col-span-2 relative overflow-hidden rounded-[1.5rem] md:rounded-[2.5rem] shadow-lg border-4 border-primary/20 bg-black group"
-              >
-                <iframe 
-                  src="https://drive.google.com/file/d/1GClxMe_t8W1iCbsD-pv3mITdALaydhNf/preview" 
-                  className="w-full h-full"
-                  allow="autoplay"
-                  title="Hoạt động trung tâm video 1"
-                ></iframe>
-                <div className="absolute top-4 left-4 bg-primary text-white text-[10px] font-bold uppercase tracking-widest px-3 py-1 rounded-full flex items-center gap-2 shadow-lg backdrop-blur-sm pointer-events-none">
-                  <Play className="w-3 h-3 fill-current" /> Video nổi bật
-                </div>
-              </motion.div>
-
-              {/* Video 2 */}
-              <motion.div 
-                variants={fadeInUp}
-                className="md:row-span-1 md:col-span-1 relative overflow-hidden rounded-[1.5rem] md:rounded-[2.5rem] shadow-lg border-4 border-secondary/20 bg-black group"
-              >
-                <iframe 
-                  src="https://drive.google.com/file/d/1csK6a3HBjiY2MEXEyJv0XIB-MlpPRm1w/preview" 
-                  className="w-full h-full"
-                  allow="autoplay"
-                  title="Hoạt động trung tâm video 2"
-                ></iframe>
-              </motion.div>
-
-              {/* Video 3 */}
-              <motion.div 
-                variants={fadeInUp}
-                className="md:row-span-1 md:col-span-1 relative overflow-hidden rounded-[1.5rem] md:rounded-[2.5rem] shadow-lg border-4 border-secondary/20 bg-black group"
-              >
-                <iframe 
-                  src="https://drive.google.com/file/d/1i3txbw8xygWaBiv7GWf405W_yaugqkE6/preview" 
-                  className="w-full h-full"
-                  allow="autoplay"
-                  title="Hoạt động trung tâm video 3"
-                ></iframe>
-              </motion.div>
-
-              {/* Video 4 (Original) */}
-              <motion.div 
-                variants={fadeInUp}
-                className="md:row-span-1 md:col-span-1 relative overflow-hidden rounded-[1.5rem] md:rounded-[2.5rem] shadow-lg border-4 border-primary/10 bg-black group"
-              >
-                <iframe 
-                  src="https://drive.google.com/file/d/1vDQyiNJ58cxV9QQDghS1ic_jW0ErGapT/preview" 
-                  className="w-full h-full"
-                  allow="autoplay"
-                  title="Hoạt động trung tâm video 4"
-                ></iframe>
-              </motion.div>
-            </motion.div>
-          </div>
-        </section>
-
       </main>
-
-      {/* Admission Notice Section */}
-      <section id="admission" className="py-20 px-6 bg-white overflow-hidden border-t border-outline-variant/20 scroll-mt-20">
-        <div className="max-w-7xl mx-auto flex flex-col gap-12">
-          <motion.div {...fadeInUp} className="flex flex-col gap-4 text-center items-center">
-            <span className="text-secondary font-bold text-sm tracking-widest uppercase bg-secondary/10 px-4 py-1.5 rounded-full w-fit">
-              Năm học 2026 - 2027
-            </span>
-            <h2 className="font-lexend text-3xl md:text-5xl text-[#073a36] font-bold leading-tight">
-              Thông Báo Tuyển Sinh Năm Học Mới
-            </h2>
-            <div className="h-1.5 w-24 bg-primary rounded-full mb-2"></div>
-            <p className="text-on-surface-variant max-w-2xl text-base leading-relaxed">
-              Trung tâm Ngoại ngữ Nextgen xin gửi lời chào trân trọng đến Quý phụ huynh cùng các em học sinh. Chúng tôi chính thức tuyển sinh các chương trình Anh ngữ chất lượng cao cho năm học mới:
-            </p>
-          </motion.div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {/* Program 1 */}
-            <motion.div 
-              {...fadeInUp}
-              className="bg-surface p-6 rounded-3xl border border-outline-variant/30 shadow-sm hover:border-primary/40 hover:-translate-y-1 transition-all flex flex-col gap-4"
-            >
-              <div className="bg-primary/10 text-primary w-12 h-12 rounded-2xl flex items-center justify-center font-bold text-lg shrink-0">
-                🐣
-              </div>
-              <div>
-                <h3 className="font-lexend font-black text-lg text-[#073a36]">Mầm non (4 - 5 tuổi)</h3>
-                <p className="text-xs text-primary font-bold uppercase mt-1">Học mà chơi - chơi mà học</p>
-              </div>
-              <p className="text-xs text-on-surface-variant font-medium leading-relaxed">
-                Làm quen tiếng Anh qua hình ảnh sinh động, âm thanh rộn ràng và vận động trực quan. Hình thành phản xạ tự nhiên nhất cho trẻ ngay từ thuở sơ khai.
-              </p>
-            </motion.div>
-
-            {/* Program 2 */}
-            <motion.div 
-              {...fadeInUp}
-              className="bg-surface p-6 rounded-3xl border border-outline-variant/30 shadow-sm hover:border-primary/40 hover:-translate-y-1 transition-all flex flex-col gap-4"
-            >
-              <div className="bg-primary/10 text-primary w-12 h-12 rounded-2xl flex items-center justify-center font-bold text-lg shrink-0">
-                🎒
-              </div>
-              <div>
-                <h3 className="font-lexend font-black text-lg text-[#073a36]">Tiểu học (Lớp 1 - 5)</h3>
-                <p className="text-xs text-primary font-bold uppercase mt-1">Xây nền tảng vững chắc</p>
-              </div>
-              <p className="text-xs text-on-surface-variant font-medium leading-relaxed">
-                Phát triển đồng đều 4 kỹ năng: Nghe - Nói - Đọc - Viết. Giúp các em xây dựng rễ từ vựng và ngữ pháp vững vàng, tự tin giao tiếp và bứt phá điểm số ở trường.
-              </p>
-            </motion.div>
-
-            {/* Program 3 */}
-            <motion.div 
-              {...fadeInUp}
-              className="bg-surface p-6 rounded-3xl border border-outline-variant/30 shadow-sm hover:border-primary/40 hover:-translate-y-1 transition-all flex flex-col gap-4"
-            >
-              <div className="bg-primary/10 text-primary w-12 h-12 rounded-2xl flex items-center justify-center font-bold text-lg shrink-0">
-                📚
-              </div>
-              <div>
-                <h3 className="font-lexend font-black text-lg text-[#073a36]">THCS (Lớp 6 - 9)</h3>
-                <p className="text-xs text-primary font-bold uppercase mt-1">Lộ trình rõ ràng</p>
-              </div>
-              <p className="text-xs text-on-surface-variant font-medium leading-relaxed">
-                Củng cố, nâng cao kiến thức bám sát khung SGK mới và chuẩn Cambridge. Lộ trình ôn thi học thuật rõ ràng để con tự tin học tập và vượt trội mục tiêu điểm số.
-              </p>
-            </motion.div>
-
-            {/* Program 4 */}
-            <motion.div 
-              {...fadeInUp}
-              className="bg-surface p-6 rounded-3xl border border-outline-variant/30 shadow-sm hover:border-primary/40 hover:-translate-y-1 transition-all flex flex-col gap-4"
-            >
-              <div className="bg-primary/10 text-primary w-12 h-12 rounded-2xl flex items-center justify-center font-bold text-lg shrink-0">
-                🎓
-              </div>
-              <div>
-                <h3 className="font-lexend font-black text-lg text-[#073a36]">Luyện thi IELTS / 4 Kỹ Năng</h3>
-                <p className="text-xs text-primary font-bold uppercase mt-1">Lộ trình học bài bản</p>
-              </div>
-              <p className="text-xs text-on-surface-variant font-medium leading-relaxed">
-                Chương trình chuẩn hóa học thuật cao, phát triển toàn diện tư duy ngôn ngữ. Lộ trình giảng dạy khoa học giúp học viên tự tin nâng cao trình độ, đạt mục tiêu chứng chỉ.
-              </p>
-            </motion.div>
-          </div>
-
-          {/* Why Nextgen Grid */}
-          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center bg-[#f4f9f8] p-8 md:p-12 rounded-[3rem] border border-primary/10">
-            <div className="lg:col-span-7 flex flex-col gap-6">
-              <h3 className="font-lexend text-2xl font-black text-[#073a36]">Vì sao ba mẹ lựa chọn NEXTGEN?</h3>
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                {[
-                  "Lộ trình học rõ ràng, phù hợp từng độ tuổi",
-                  "Giáo viên theo sát, quan tâm học sinh",
-                  "Học chắc - hiểu sâu - tiến bộ bền vững",
-                  "Kiểm tra đầu vào MIỄN PHÍ 100%"
-                ].map((benefit, i) => (
-                  <div key={i} className="flex items-center gap-3 bg-white p-4 rounded-2xl border border-outline-variant/20 shadow-sm">
-                    <span className="w-6 h-6 rounded-full bg-emerald-100 text-emerald-700 flex items-center justify-center font-black text-xs">✓</span>
-                    <span className="text-xs font-bold text-[#073a36]">{benefit}</span>
-                  </div>
-                ))}
-              </div>
-              <p className="text-xs font-semibold text-on-surface-variant italic leading-relaxed">
-                * NextGen cam kết kiểm tra đầu vào 100% miễn phí nhằm đánh giá chính xác nhất năng lực ban đầu của con để xếp lớp và xây dựng lộ trình rèn luyện phù hợp nhất.
-              </p>
-            </div>
-
-            <div className="lg:col-span-5 bg-white p-6 rounded-[2.5rem] border-2 border-secondary/20 shadow-lg flex flex-col gap-4 text-center items-center">
-              <span className="bg-red-500 text-white font-extrabold uppercase text-[10px] tracking-wider px-4 py-1.5 rounded-full animate-bounce">
-                Thông tin tuyển sinh
-              </span>
-              <div className="flex flex-col">
-                <span className="text-xs font-extrabold text-on-surface-variant uppercase">Hạn cuối đăng ký</span>
-                <span className="font-lexend text-2xl font-black text-secondary mt-1">31 / 05 / 2026</span>
-              </div>
-              <div className="w-full h-px bg-outline-variant/30"></div>
-              <div className="flex flex-col gap-2 w-full">
-                <div className="text-left w-full text-xs font-bold text-on-surface-variant flex flex-col gap-1">
-                  <span className="text-[10px] uppercase text-primary tracking-wider">Hotline tư vấn liên hệ:</span>
-                  <span className="text-sm font-black text-[#073a36]">0986 197 229 / 0334 141 989</span>
-                </div>
-                <div className="text-left w-full text-xs font-bold text-on-surface-variant flex flex-col gap-1 mt-1">
-                  <span className="text-[10px] uppercase text-primary tracking-wider">Địa chỉ trung tâm:</span>
-                  <span className="text-xs font-black text-[#073a36]">Số 32 Tổ 31B K9, Quang Trung, Phường Uông Bí, Quảng Ninh</span>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Registration Section (Moved above footer) */}
       <section id="register" className="py-16 md:py-20 px-6 bg-surface-variant/30 scroll-mt-20">
