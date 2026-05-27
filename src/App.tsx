@@ -266,7 +266,8 @@ export default function App() {
                 <span className="text-xs md:text-sm font-bold uppercase tracking-wider">Nextgen English - Uông Bí</span>
               </div>
               <p className="text-base md:text-lg lg:text-xl text-on-surface-variant font-semibold leading-relaxed">
-                Cam kết môi trường học chất lượng cao – giúp học viên tự tin giao tiếp và bứt phá tương lai.
+                Cam kết môi trường học chất lượng cao<br />
+                giúp học viên tự tin giao tiếp và bứt phá tương lai.
               </p>
             </div>
             <button 
