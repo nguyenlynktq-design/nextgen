@@ -243,35 +243,37 @@ export default function App() {
 
       <main className="flex-grow">
         {/* Hero Section */}
-        <section id="home" className="relative w-full min-h-[80vh] md:min-h-[600px] bg-surface-variant overflow-hidden flex flex-col justify-end p-6 md:p-12 scroll-mt-20">
+        <section id="home" className="relative w-full min-h-[80vh] md:min-h-[600px] bg-surface-variant overflow-hidden flex flex-col justify-center p-6 md:p-16 lg:p-24 scroll-mt-20">
           <div className="absolute inset-0 z-0">
             <img 
               alt="Ảnh bìa Trung tâm Ngoại ngữ Nextgen" 
-              className="w-full h-full object-cover opacity-95" 
+              className="w-full h-full object-cover" 
               src="https://i.postimg.cc/5NwT3txg/63d08b76-6a6d-4465-a854-45fd77e2556a.png"
               referrerPolicy="no-referrer"
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-background via-background/60 to-transparent"></div>
+            {/* Reduced gradient overlay for better image clarity while maintaining text readability */}
+            <div className="absolute inset-0 bg-gradient-to-r from-background/95 via-background/50 to-transparent md:w-3/4"></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-background/50 via-transparent to-transparent"></div>
           </div>
           
           <motion.div 
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
-            className="relative z-10 flex flex-col gap-4 max-w-3xl"
+            className="relative z-10 flex flex-col gap-4 md:gap-5 max-w-2xl mt-12 md:mt-0"
           >
-            <div className="inline-flex items-center gap-2 bg-secondary text-white px-4 py-1.5 rounded-full w-fit shadow-sm">
-              <span className="text-sm font-bold">Nextgen English - Uông Bí</span>
+            <div className="inline-flex items-center gap-2 bg-secondary text-white px-3 py-1.5 md:px-4 md:py-2 rounded-full w-fit shadow-sm">
+              <span className="text-xs md:text-sm font-bold uppercase tracking-wider">Nextgen English - Uông Bí</span>
             </div>
-            <h1 className="font-lexend text-4xl md:text-6xl text-primary leading-tight font-bold">
-              Nextgen English.<br />Learn English , Lead the way
+            <h1 className="font-lexend text-3xl md:text-4xl lg:text-5xl text-primary leading-snug font-black">
+              Nextgen English.<br />Learn English, Lead the way
             </h1>
-            <p className="text-lg md:text-xl text-on-surface-variant max-w-xl">
+            <p className="text-base md:text-lg text-on-surface-variant max-w-lg font-medium leading-relaxed">
               Cam kết môi trường học chất lượng cao – giúp học viên tự tin giao tiếp và bứt phá tương lai.
             </p>
             <button 
               onClick={() => scrollToSection("register")}
-              className="bg-primary text-on-primary text-sm font-bold py-4 px-8 rounded-lg self-start mt-4 shadow-lg hover:bg-primary-container transition-all active:scale-95 cursor-pointer"
+              className="bg-primary text-on-primary text-sm font-bold py-3.5 px-8 rounded-xl self-start mt-2 shadow-lg shadow-primary/30 hover:shadow-xl hover:bg-primary/90 transition-all active:scale-95 cursor-pointer"
             >
               Nhận tư vấn miễn phí
             </button>
