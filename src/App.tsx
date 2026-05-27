@@ -10,6 +10,9 @@ import lobbyImg from "./assets/images/lobby.png";
 import heroImg from "./assets/images/hero_cover.jpg";
 import trangImg from "./assets/images/founder_trang.png";
 import thaoImg from "./assets/images/founder_thao.png";
+import learningAiImg from "./assets/images/learning_ai.png";
+import writingAiImg from "./assets/images/writing_ai.png";
+import speakingAiImg from "./assets/images/speaking_ai.png";
 import { 
   Menu, 
   Globe, 
@@ -421,7 +424,7 @@ export default function App() {
                 <div className="w-full lg:w-2/5 relative group">
                   <div className="aspect-[3/4] lg:aspect-auto lg:h-full overflow-hidden">
                     <img 
-                      src="https://i.postimg.cc/NjJrw99C/e649959d-698f-463a-a8c9-3cf8143e7cc1.png" 
+                      src="https://i.postimg.cc/7PWKYRSg/0e1fb43f-33b4-451e-9d31-dcf86f47a6c3.png" 
                       alt="Cô Vũ Thị Huyền Trang - Đồng sáng lập NextGen English" 
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                       referrerPolicy="no-referrer"
@@ -499,7 +502,7 @@ export default function App() {
                 <div className="w-full lg:w-2/5 relative group">
                   <div className="aspect-[3/4] lg:aspect-auto lg:h-full overflow-hidden">
                     <img 
-                      src="https://i.postimg.cc/sxCG9mcg/34a16ce9-7f53-4928-b7e6-0a56ad28decc.png" 
+                      src="https://i.postimg.cc/wjPZR38v/dde35160-facb-4e15-a38e-8c107c896eb1.png" 
                       alt="Cô Đỗ Thị Phương Thảo - Đồng sáng lập NextGen English" 
                       className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                       referrerPolicy="no-referrer"
@@ -558,8 +561,8 @@ export default function App() {
                     </div>
                   </div>
 
-                  <div className="bg-secondary/5 rounded-2xl p-5 border border-secondary/10 mt-2">
-                    <p className="italic text-sm font-semibold text-secondary leading-relaxed">
+                  <div className="bg-rose-50/50 rounded-2xl p-5 border border-rose-100 mt-2">
+                    <p className="italic text-sm font-semibold text-rose-600 leading-relaxed">
                       "Tôi tin rằng mỗi đứa trẻ đều có khả năng tiếp thu ngôn ngữ phi thường. Điều quan trọng là tạo cho các con một môi trường đầy yêu thương, nơi các con được tự do khám phá và yêu thích tiếng Anh một cách tự nhiên nhất."
                     </p>
                   </div>
@@ -717,11 +720,7 @@ export default function App() {
                 <span className="bg-red-500 text-white font-extrabold uppercase text-[10px] tracking-wider px-4 py-1.5 rounded-full animate-bounce">
                   Thông tin tuyển sinh
                 </span>
-                <div className="flex flex-col">
-                  <span className="text-xs font-extrabold text-on-surface-variant uppercase">Hạn cuối đăng ký</span>
-                  <span className="font-lexend text-2xl font-black text-secondary mt-1">31 / 05 / 2026</span>
-                </div>
-                <div className="w-full h-px bg-outline-variant/30"></div>
+
                 <div className="flex flex-col gap-2 w-full">
                   <div className="text-left w-full text-xs font-bold text-on-surface-variant flex flex-col gap-1">
                     <span className="text-[10px] uppercase text-primary tracking-wider">Hotline tư vấn liên hệ:</span>
@@ -769,55 +768,46 @@ export default function App() {
                 { 
                   icon: Brain, 
                   title: "Learning", 
-                  image: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?auto=format&fit=crop&q=80&w=800",
+                  image: learningAiImg,
                   desc: "Kho tài liệu thông minh & lộ trình cá nhân hóa từ AI giúp bạn nắm bắt kiến thức nhanh hơn 3 lần.",
                   color: "bg-blue-600",
                   shadow: "shadow-blue-500/30",
-                  link: "https://mrsdung.vercel.app/"
+                  link: "https://nextgenstudy.vercel.app/"
                 },
                 { 
                   icon: PenTool, 
                   title: "Writing", 
-                  image: "https://images.unsplash.com/photo-1455390582262-044cdead277a?auto=format&fit=crop&q=80&w=800",
+                  image: writingAiImg,
                   desc: "Chấm chữa bài viết AI ngay lập tức, sửa lỗi ngữ pháp và gợi ý cách dùng từ vựng nâng cao.",
                   color: "bg-indigo-600",
                   shadow: "shadow-indigo-500/30",
-                  link: "https://writingpro.vercel.app/"
+                  link: "https://nextgenwrite.vercel.app/"
                 },
                 { 
                   icon: MicVocal, 
                   title: "Speaking", 
-                  image: "https://images.unsplash.com/photo-1543269664-56d93c1b41a6?auto=format&fit=crop&q=80&w=800",
+                  image: speakingAiImg,
                   desc: "Luyện phát âm chuẩn bản xứ với trí tuệ nhân tạo, phản hồi chính xác từng âm tiết trong thời gian thực.",
                   color: "bg-rose-600",
                   shadow: "shadow-rose-500/30",
-                  link: "https://mrsdungspeak.vercel.app/"
+                  link: "https://speaknextgen.vercel.app/"
                 }
               ].map((item, i) => (
-                <motion.div 
+                <motion.a 
                   key={i}
+                  href={item.link || "#"}
+                  target={item.link ? "_blank" : undefined}
+                  rel={item.link ? "noopener noreferrer" : undefined}
                   variants={fadeInUp}
                   whileHover={{ y: -12 }}
-                  className="group relative bg-white rounded-[2rem] shadow-level-1 hover:shadow-2xl transition-all duration-500 cursor-pointer overflow-hidden border border-outline-variant/20"
+                  className="group relative bg-white rounded-[2rem] shadow-level-1 hover:shadow-2xl transition-all duration-500 cursor-pointer overflow-hidden border border-outline-variant/20 block"
                 >
                   <div className="aspect-[16/10] overflow-hidden relative">
-                    {item.link ? (
-                      <a href={item.link} target="_blank" rel="noopener noreferrer" className="block w-full h-full">
-                        <img 
-                          src={item.image} 
-                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
-                          alt={item.title}
-                          referrerPolicy="no-referrer"
-                        />
-                      </a>
-                    ) : (
-                      <img 
-                        src={item.image} 
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
-                        alt={item.title}
-                        referrerPolicy="no-referrer"
-                      />
-                    )}
+                    <img 
+                      src={item.image} 
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
+                      alt={item.title}
+                    />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent pointer-events-none"></div>
                     <div className={`absolute top-4 left-4 w-12 h-12 ${item.color} rounded-xl flex items-center justify-center text-white shadow-lg ${item.shadow} pointer-events-none`}>
                       <item.icon className="w-6 h-6" />
@@ -831,21 +821,16 @@ export default function App() {
                     </p>
                     
                     {item.link ? (
-                      <a 
-                        href={item.link} 
-                        target="_blank" 
-                        rel="noopener noreferrer" 
-                        className="flex items-center gap-2 text-sm font-bold text-primary group-hover:gap-4 transition-all uppercase tracking-widest"
-                      >
+                      <div className="flex items-center gap-2 text-sm font-bold text-primary group-hover:gap-4 transition-all uppercase tracking-widest">
                         Kết nối AI ngay <ArrowRight className="w-4 h-4" />
-                      </a>
+                      </div>
                     ) : (
                       <div className="flex items-center gap-2 text-sm font-bold text-primary group-hover:gap-4 transition-all uppercase tracking-widest opacity-60">
                         Sắp ra mắt <ArrowRight className="w-4 h-4" />
                       </div>
                     )}
                   </div>
-                </motion.div>
+                </motion.a>
               ))}
             </motion.div>
           </div>
