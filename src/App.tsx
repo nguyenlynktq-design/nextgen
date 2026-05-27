@@ -327,7 +327,7 @@ export default function App() {
               <span className="inline-flex items-center gap-2 text-secondary font-bold text-sm tracking-widest uppercase bg-secondary/10 px-5 py-2 rounded-full w-fit border border-secondary/20">
                 Về chúng tôi
               </span>
-              <h2 className="font-lexend text-[28px] sm:text-3xl md:text-5xl text-on-surface font-bold leading-tight">
+              <h2 className="font-lexend text-[22px] sm:text-[28px] md:text-4xl lg:text-5xl text-on-surface font-bold leading-tight">
                 Trung Tâm Ngoại Ngữ<br />
                 <span className="text-primary">NextGen English</span>
               </h2>
